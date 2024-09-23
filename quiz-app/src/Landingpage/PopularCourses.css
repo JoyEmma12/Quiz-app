@@ -1,0 +1,130 @@
+.popular-container {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  margin-top: 10%;
+  /* background-color: var(--background-color); */
+}
+
+.courseitem-img {
+  width: 100%;
+}
+
+.popular-header {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  color: var(--text-color);
+}
+
+.popular-courses {
+  width: 90%;
+  margin: auto;
+}
+.slick-track {
+  width: 100%;
+  height: 300px;
+}
+
+.slider {
+  margin: 20px auto; /* Center the slider */
+}
+
+.popularcourses-item {
+  width: 50%;
+  /* overflow: hidden; */
+  margin: 0 10px; /* Space between the carousel items */
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+.slick-slide {
+  margin: 0 10px; /* Ensure there is space between slides */
+}
+
+.courses-content {
+  text-align: center;
+  margin: 8px 18px;
+  color: #fff;
+  padding: 10px;
+}
+.explorecourses-btn {
+  border: 3px solid #fff;
+  background-color: inherit;
+  width: 280px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+.explorecourses-btn:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+  transition: all 0.3s ease-out;
+}
+
+.popular-container .explore-prev,
+.popular-container .explore-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.popular-container .explore-prev:hover,
+.popular-container .explore-next:hover {
+  background-color: var(--text-color);
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 514px) {
+  .popular-courses {
+    width: 100%;
+  }
+  popularcourses-item {
+    width: 100%;
+  }
+  .explorecourses-btn {
+    width: 100%;
+  }
+  .courses-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .popular-header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popular-courses {
+    width: 100%;
+  }
+  popularcourses-item {
+    width: 100%;
+  }
+  .explorecourses-btn {
+    width: 100%;
+  }
+  .popular-header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .explorecourses-btn {
+    width: 100%;
+  }
+  .popular-header {
+    width: 90%;
+  }
+}
