@@ -1,7 +1,90 @@
-.navbar {
-  margin: auto;
+.navbars {
+  width: 100%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 16px;
+  position: relative;
 }
-.navbar-expand-lg {
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin: auto;
+  gap: 15px;
+  margin: 0px 24px;
+  transition: max-height 0.3s ease-in-out; /* Smooth transition for toggle */
+  max-height: 0; /* Collapsed by default */
+}
+
+.navbar-links.responsive {
+  max-height: 500px; /* Large enough to show the links */
+  visibility: visible; /* Show the navbar links */
+}
+
+.navbar-links .link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btns {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.btns .nav-buttons {
+  margin: 10px;
+}
+
+.nav-btns {
+  visibility: hidden;
+}
+.login-btn,
+.signup-btn {
+  background-color: inherit;
+  width: 130px;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
+}
+.signup-btn {
+  background-color: #fff;
+  color: var(--accent-color);
+}
+.login-btn:hover {
+  background-color: #fff;
+  color: var(--accent-color);
+  transition: 0.4s;
+}
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    visibility: hidden;
+    background-color: var(--accent-color);
+    width: 100%;
+    margin-top: 8%;
+    margin-left: -8%;
+    /* overflow: hidden;  */
+  }
+  .navbars {
+    align-items: flex-start;
+  }
+  .navbar-links.responsive {
+    height: 300px;
+    visibility: visible;
+  }
+
+  .btns {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav-btns {
+    visibility: visible;
+  }
 }

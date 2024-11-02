@@ -6,8 +6,11 @@
   --text-color: #03033a;
   --secondary-color: #89a8ff;
 }
-* {
+*,
+*::before,
+*::after {
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }

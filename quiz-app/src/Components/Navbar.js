@@ -1,36 +1,60 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"
+import { FaTimes, FaBars } from "react-icons/fa";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [navOpen, setNavOpen] = useState(false); // State to track navbar visibility
+
+  const toggleNav = () => {
+    setNavOpen(!navOpen); 
+  };
+
+  useEffect(() => {
+    const navbarLinks = document.querySelector(".navbar-links");
+
+    if (navOpen) {
+      navbarLinks.classList.add("responsive");
+    } else {
+      navbarLinks.classList.remove("responsive");
+    }
+  }, [navOpen]); 
+
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-        <Link className="navbar-brand">Navbar</Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <Link clLinkssName="nav-link active" aria-current="page">
-              Home
-            </Link>
-            <Link className="nav-link">Features</Link>
-            <Link className="nav-link">Pricing</Link>
-            <Link className="nav-link disabled" aria-disabled="true">
-              Disabled
-            </Link>
-          </div>
+    <header className="navbars">
+      <h2 className="fw-bold fs-2 text-white">TechQuest</h2>
+      <nav className="navbar-links">
+        <Link to="/" className="link">
+          Home
+        </Link>
+        <Link to="/courses" className="link">
+          Courses
+        </Link>
+        <Link to="/features" className="link">
+          Features
+        </Link>
+        <Link to="/about" className="link">
+          About Us
+        </Link>
+        <Link to="/contact" className="link">
+          Contact Us
+        </Link>
+
+        <div className="btns">
+          <Link to="/login" className="nav-buttons">
+            <button className="login-btn">LogIn</button>
+          </Link>
+          <Link to="/signup" className="nav-buttons">
+            <button className="signup-btn">SignUp</button>
+          </Link>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      {/* Show FaBars when the menu is closed and FaTimes when open */}
+      <button className="nav-btns" onClick={toggleNav}>
+        {navOpen ? <FaTimes /> : <FaBars />}
+      </button>
+    </header>
   );
 };
 

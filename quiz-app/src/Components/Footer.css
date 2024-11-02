@@ -16,11 +16,12 @@
 @media screen and (max-width: 514px) {
     .footer-container {
         flex-direction: column;
-        margin: 10px;
+        /* margin: 10px; */
     }
     .links {
         flex-wrap: wrap;
         align-items: center;
+        margin: auto;
     }
 }
 @media screen and (max-width: 768px) {
