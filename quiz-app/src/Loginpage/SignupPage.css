@@ -169,6 +169,9 @@ input {
 .line {
   display: inline-block;
 }
+.login-text {
+  color: var(--accent-color)
+}
 
 /* reponsiveness */
 @media screen and (max-width: 514px) {

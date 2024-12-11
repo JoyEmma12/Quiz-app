@@ -1,0 +1,70 @@
+.loginimg {
+  width: 45%;
+  min-width: 300px;
+  height: 100%;
+  /* background-color: var(--accent-color); */
+  background-image: url("./images/Femalestudentwithbag.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 24%;
+  position: relative;
+  opacity: 0.9;
+}
+.logo-login {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: var(--text-color);
+}
+.login-header h3 {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  left: 8%;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.login-header p {
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  top: 66%;
+  left: 3%;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+/* responsiveness */
+@media screen and (max-width: 514px) {
+  .Loginpage-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+   .loginimg {
+    width: 100%;
+    padding: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+   .Loginpage-container {
+    flex-direction: column;
+    
+  }
+  .loginimg {
+    width: 100%;
+    padding: 50%;
+  }
+}
+@media screen and (max-width:992px) {
+   .Loginpage-container {
+    /* flex-direction: column;
+     */
+    width: 100%;
+  }
+/* .signupform-section,
+.loginimg {
+  width: 100%;
+} */
+}

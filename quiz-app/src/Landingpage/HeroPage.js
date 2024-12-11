@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./HeroPage.css";
-import Elipse from "./images/Ellipse 1.png";
-import image1 from "./images/image1.png";
+// import Elipse from "./images/Ellipse 1.png";
+import heroimage2 from "./images/heroimage2.png"
 const HeroPage = () => {
   return (
-    <div className="hero-container container d-flex flex-lg-row flex-sm-column align-items-center justify-content-between gap-4">
+    <div className="hero-container container d-flex flex-lg-row flex-sm-column align-items-center justify-content-between">
       <div className="hero-content">
         <h2 className="fw-bold fs-1">Level Up your Knowledge with TechQuest</h2>
         <p className="fw-medium">
@@ -22,8 +22,8 @@ const HeroPage = () => {
         </Link>
       </div>
       <div className="hero-imgcontent">
-        <img src={Elipse} alt="elipse" className="elipse" />
-        <img src={image1} alt="image1" className="heroimage" />
+        {/* <img src={Elipse} alt="elipse" className="elipse" /> */}
+        <img src={heroimage2} alt="image1" className="heroimage" />
       </div>
     </div>
   );

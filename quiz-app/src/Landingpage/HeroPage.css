@@ -6,17 +6,17 @@
 }
 
 .heroimage {
-  width: 100%;
+  width: 650px;
 }
-.elipse {
+/* .elipse {
   width: 70%;
   position: absolute;
   z-index: -1;
   left: 15%;
-}
-.hero-imgcontent {
+} */
+/* .hero-imgcontent {
   position: relative;
-}
+} */
 .hero-content h2,
 .hero-content p {
   color: var(--text-color);
@@ -31,7 +31,7 @@
   font-weight: bold;
 }
 .getstarted-btn:hover {
-  background-color: #0909b8;
+  background-color: var(--primary-color);
 }
 
 /* repsonsiveness */
@@ -42,6 +42,9 @@
   .hero-content {
     text-align: center;
   }
+  .heroimage {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .hero-container {
@@ -51,6 +54,9 @@
     text-align: center;
     text-wrap: pretty;
   }
+  .heroimage {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -59,5 +65,8 @@
   }
   .hero-content {
     text-align: center;
+  }
+  .heroimage {
+    width: 100%;
   }
 }

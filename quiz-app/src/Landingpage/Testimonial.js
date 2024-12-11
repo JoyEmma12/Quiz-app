@@ -23,8 +23,8 @@ const testimonialList = [
     id: 3,
     image: man2,
     testi:
-      "The interactive quizzes make learning so much fun! Highly recommend it to anyone looking to improve their tech skills.",
-    name: "Michael Johnson, UI/UX Designer",
+      "The interactive quizzes make learning so much fun! Highly recommend it to anyone looking to improve their skills.",
+    name: "Michael John, UI/UX Designer",
   },
 ];
 

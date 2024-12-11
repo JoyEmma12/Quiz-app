@@ -355,6 +355,14 @@ const SignupPage = () => {
               </button>
             </form>
           </section>
+          <section>
+            <p className="loginoption text-center fw-normal fs-6 ">
+              Already have an account?{" "}
+              <Link className="text-decoration-none" to="/login">
+                <b className="login-text">Login</b>
+              </Link>
+            </p>
+          </section>
         </section>
       )}
     </main>

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --background-color: #e8f0ff;
-  --accent-color: #0a0ac2;
-  --primary-color: #1312ff;
-  --text-color: #03033a;
+  --background-color: #eef2ff;
+  --accent-color: #753eff;
+  --primary-color: #6718ff;
+  --text-color: #230075;
   --secondary-color: #89a8ff;
 }
 *,

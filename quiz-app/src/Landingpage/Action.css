@@ -1,15 +1,15 @@
 .action-container {
   width: 100%;
-  padding: 25px;
-  margin-top: 5%;
+  padding: 5px;
+  /* margin-top: 5%; */
 }
 .action-header {
   color: var(--text-color);
 }
 .actionimg {
-  width: 80%;
+  width: 400px;
 }
-.elipseaction {
+/* .elipseaction {
   width: 50%;
   position: absolute;
   z-index: -1;
@@ -18,7 +18,7 @@
 }
 .hero-imgcontent {
   position: relative;
-}
+} */
 .action-content {
   width: 70%;
   margin: auto;
@@ -39,6 +39,9 @@
   /* .elipseaction {
     left: 30%;
   } */
+  .actionimg {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .action-subcontent {
@@ -47,6 +50,9 @@
   .action-content {
     flex-direction: column;
     /* text-align: center; */
+  }
+  .actionimg {
+    width: 100%;
   }
 }
 
@@ -57,5 +63,8 @@
   .action-content {
     flex-direction: column;
     /* text-align: center; */
+  }
+  .actionimg {
+    width: 100%;
   }
 }
